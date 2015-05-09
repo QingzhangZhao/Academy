@@ -32,6 +32,7 @@ GET /posts_img                             **获取帖子图片**
 GET /news?id=_id&date=_date
 
 _id:文章的id,默认为0
+
 _date:文章的日期,默认为2000年1月1日0点0分0秒(具体格式再定)
 <h4>return(返回为json字符串):</h4>
 ```
