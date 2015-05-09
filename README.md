@@ -18,9 +18,12 @@
 http://hustcomputerapp.com （暂定）
 <h3>获取主页图片</h3>
 GET /news_img                         	 **获取新闻图片**
+
 GET /notification_img             	 **获取通知图片**
-GET /lostandfound_img            **获取失物招领图片**
-GET /posts_img                             **获取帖子图片**
+
+GET /lostandfound_img                    **获取失物招领图片**
+
+GET /posts_img                           **获取帖子图片**
 
 
 ----------
