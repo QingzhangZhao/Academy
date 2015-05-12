@@ -55,23 +55,36 @@ _date:文章的日期,默认为2000年1月1日0点0分0秒(具体格式再定)
 文章(article)部分已经结构化:
 ```
 [
-    "id":xxx
-    "title":'xxxxxx'
-    "body": "xxxx",
-    "image":"www.xxxx.com/static/images",
-    "date":'2000-01-00 10:00:00'
-
+  {
+    "type": "text",
+    "body": "123",
+    "style": {}            这里提供字体等格式,具体分为"b"(加
+                           粗),"font"(字体),"size"(字的大
+                           小),"color"(字的颜色),"a"(超链接)
+  },
+  {
+    "type": "image",
+    "src": "xxx.jpg",      这里将提供图片的url
+    "style": {}            这里提供图片的具体格式,和前端格式相同
+  }
 ]
 ```
 评论(review)部分已经结构化:
 ```
 [
-	"userid":xxx,
-    "username":"xxxx",
-    "commentid":xxx,
-	"image":xxx/img,    这里将提供图片的url
+	"id":xxx,
+	"portrait":xxx/img,    这里将提供图片的url
 	"date":xxxx,
-    "comment":"xxxxx",
+	{
+		"type":"text",
+		"body":"123",
+		"style":{}         这里同上
+	},
+	{
+		"type":"emoji",
+		"body":{:4_885:}
+	}
+
 ]
 ```
 
