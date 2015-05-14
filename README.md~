@@ -44,36 +44,13 @@ _date:文章的日期,默认为2000年1月1日0点0分0秒(具体格式再定)
 ```
 {
 	"id":xxx,
-	"date":xxxx,
-	"title":xxxx,
-	"article":xxxx,
-	"zan":xxx,
-	"review":xxxx
-
+	"date":xxxx-xx-xx xx:xx:xx,
+	"title":"xxxx",
+    "content":"xxx",
+    "image":"xxxx",
 }
 ```
-文章(article)部分已经结构化:
-```
-[
-    "id":xxx
-    "title":'xxxxxx'
-    "body": "xxxx",
-    "image":"www.xxxx.com/static/images",
-    "date":'2000-01-00 10:00:00'
 
-]
-```
-评论(review)部分已经结构化:
-```
-[
-	"userid":xxx,
-    "username":"xxxx",
-    "commentid":xxx,
-	"image":xxx/img,    这里将提供图片的url
-	"date":xxxx,
-    "comment":"xxxxx",
-]
-```
 
 ----------
 

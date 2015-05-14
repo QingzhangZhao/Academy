@@ -43,7 +43,7 @@ INSTALLED_APPS = (
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
+    #'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
@@ -103,13 +103,13 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 TEMPLATE_DIRS = (
-    os.path.join(BASE_DIR,  'templates'),
+    os.path.join(BASE_DIR,  'templates/'),
 )
 
 #SITE_ROOT = os.path.join(os.path.dirname(__file__),'..')
 STATIC_ROOT = os.path.join(BASE_DIR,'static/')
 STATICFILES_DIRS = (
         ('images',os.path.join(STATIC_ROOT,'images/')),
-        ('css',os.path.join((STATIC_ROOT,'css/')),
+        ('css',os.path.join(STATIC_ROOT,'css/')),
         )
 
