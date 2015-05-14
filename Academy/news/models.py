@@ -7,6 +7,9 @@ class News(models.Model):
     title = models.CharField( max_length=130)
     content = models.TextField()
     images = models.ImageField(blank=True,upload_to='./static/images/')
+
+    class Meta:
+       ordering = ['-id']
    # view = models.IntegerField()
    # cNum = models.IntegerField()
 

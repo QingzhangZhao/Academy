@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-quiv='content-type' content='text/html;charset=UTF-8'>
+	<link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css">
+	<link rel='icon' href='/static/icon/HUST.ico' type='image/x-icon'>
+	<title>Show all News</title>
+</head>
+<body>
+	<style>
+	 tr{
+	 	border-bottom: 1px solid #ddd;
+	 }
+	</style>
+   <div class='container'>
+   	  <a href='/news/addnews/'>Add News</a>
+   	  <table>
+   	  	<tr><td width='10%'>ID</td><td width='70%'>TITLE</td><td width='20%'>OP</td>
+   	  	{% for new in news %}
+   	  		<tr><td width='10%'>{{ new.id }}</td><td width='70%'>{{ new.title }}</td width='20%'><td><a href='/news/delnews/{{new.id}}'>Del</a>&nbsp;&nbsp;<a href='/news/editnews/{{new.id}}'>Edit</a></td></tr>
+   	  	{% endfor %}
+   	  </table>
+   	  <a href='/news/showall/?page={{pre}}'><button>Pre Page</button></a><a href='/news/showall/?page={{next}}'><button>Next Page</button></a>
+   </div>
+<body>
+
+
+
+</body>
+</html>

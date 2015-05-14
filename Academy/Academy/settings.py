@@ -111,5 +111,6 @@ STATIC_ROOT = os.path.join(BASE_DIR,'static/')
 STATICFILES_DIRS = (
         ('images',os.path.join(STATIC_ROOT,'images/')),
         ('css',os.path.join(STATIC_ROOT,'css/')),
+        ('icon',os.path.join(STATIC_ROOT,'icon/')),
         )
 
